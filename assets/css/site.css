@@ -34,6 +34,13 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--font-mono); font-size: var(--text-2xs); letter-spacing: 0.1em;
 }
 
+/* ── 検討用モックアップバナー（非公開URL・noindexページ用） ── */
+.draftbar.conceptbar {
+  background: var(--ink-800); border-bottom-color: var(--ink-800); color: rgba(255,255,255,0.88);
+}
+.draftbar.conceptbar .tag { background: var(--sky-500); }
+.draftbar.conceptbar a.link { color: var(--sky-300); }
+
 /* ── 未確定マーカー ───────────────────────────────── */
 .tbd {
   display: inline-block; vertical-align: middle;

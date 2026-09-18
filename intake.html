@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>子ども受け入れ・申し込み（案）｜+B-side</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/logo/plus-B_icon_tile.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Space+Mono:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-top: var(--space-6); }
+  @media (max-width: 760px) { .twocol { grid-template-columns: 1fr; } }
+  .box { border-radius: var(--radius-card); padding: 26px 28px; }
+  .box.ok { background: var(--sky-50); border: 1.5px solid var(--sky-300); }
+  .box.ng { background: var(--ink-25); border: 1.5px solid var(--border-default); }
+  .box h3 { font-weight: 900; font-size: var(--text-base); margin-bottom: var(--space-4); }
+  .box ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); font-size: var(--text-sm); font-weight: 500; line-height: 1.8; }
+  .box.ok li { padding-left: 20px; position: relative; }
+  .box.ok li::before { content: ""; position: absolute; left: 0; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--sky-500); }
+  .box.ng li { padding-left: 20px; position: relative; color: var(--text-secondary); }
+  .box.ng li::before { content: ""; position: absolute; left: 0; top: 12px; width: 10px; height: 2px; background: var(--ink-400); }
+
+  .mockform { background: var(--surface); border-radius: var(--radius-card); padding: 32px; box-shadow: var(--shadow-sm); max-width: 44em; margin-top: var(--space-8); }
+  .mockform .field { margin-bottom: var(--space-5); }
+  .mockform label { display: block; font-weight: 700; font-size: var(--text-sm); margin-bottom: 8px; }
+  .mockform label .req { color: var(--danger-500); margin-left: 4px; }
+  .mockform input, .mockform select, .mockform textarea {
+    width: 100%; border: 1.5px solid var(--border-default); border-radius: var(--radius-control);
+    padding: 10px 14px; font-family: inherit; font-size: var(--text-sm); color: var(--text-primary);
+    background: var(--bg-canvas);
+  }
+  .mockform textarea { min-height: 96px; resize: vertical; }
+  .mockform .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+  @media (max-width: 560px) { .mockform .row2 { grid-template-columns: 1fr; } }
+  .mockform button { cursor: not-allowed; opacity: 0.55; border: none; }
+  .mockform .note { font-size: var(--text-xs); color: var(--text-muted); margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<div class="draftbar conceptbar">
+  <div class="container">
+    <span class="tag">CONCEPT</span>
+    <span>これは検討用の見え方サンプルです。下の入力欄・送信ボタンはダミーで、実際には送信されません。noindexのため検索には出ません。URLを知っている人だけが見られます。</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/logo/plus-B-side_lockup_sky.svg" alt="+B-side"></a>
+    <nav class="site-nav">
+      <a href="donate.html">寄付ページ（案）</a>
+      <a href="volunteer.html">ボランティア募集（案）</a>
+      <a href="intake.html" class="current">子ども受け入れ（案）</a>
+      <a href="index.html">← 公開サイトへ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="tile t1"></div>
+  <div class="container">
+    <div class="crumbs"><a href="index.html">ホーム</a> ／ 子ども受け入れ・申し込み（案）</div>
+    <h1>子どもを受け入れるまでの流れ</h1>
+    <p>保護者の方・ご本人・支援機関のいずれからでも、お申し込み・お問い合わせを受け付ける想定のページです。</p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="container">
+    <div class="callout warn">
+      <strong>現在、正式な申し込み受付は行っていません。</strong>2026年10月からのパイロットは、個別にご案内する形で進めます。同意書の書式・記録の管理方法など運用の詳細も未確定です。このページは、正式受付を始める際の項目・見え方を検討するための案です。
+    </div>
+  </div>
+</section>
+
+<section class="block tint">
+  <div class="container">
+    <span class="kicker">Criteria</span>
+    <h2 class="sec">お受けする対象・お受けできないケース（案）</h2>
+    <div class="twocol">
+      <div class="box ok">
+        <h3>ご相談いただきたいケース</h3>
+        <ul>
+          <li>不登校、または学校に通いながらしんどさを抱えている</li>
+          <li>家族・先生・友達以外に、話せる相手がいない</li>
+          <li>本人が「話してみてもいい」と思える状態にある</li>
+        </ul>
+      </div>
+      <div class="box ng">
+        <h3>お受けできないケース<span class="tbd">要合意</span></h3>
+        <ul>
+          <li>医療的なケアが継続的に必要な状態にある場合</li>
+          <li>対面での支援が必要な場合（オンラインのみの対応です）</li>
+          <li>保護者の同意が得られない場合</li>
+          <li>受入枠が埋まっている場合</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <span class="kicker">Flow</span>
+    <h2 class="sec">申し込みから開始までの流れ（案）</h2>
+    <ol class="steps">
+      <li><span class="t">お問い合わせ</span><span class="d">保護者の方、ご本人、支援機関のいずれからでも受け付けます。</span></li>
+      <li><span class="t">保護者面談（オンライン30分）</span><span class="d">活動内容と進め方をご説明し、ご家庭の状況をうかがいます。</span></li>
+      <li><span class="t">ご本人との顔合わせ</span><span class="d">ご本人が話してみたいと思えるかを確認します。</span></li>
+      <li><span class="t">サポーターのマッチング</span><span class="d">ご本人の様子・関心をふまえて担当を決めます。</span></li>
+      <li><span class="t">同意書の取り交わし</span><span class="d">個人情報の取り扱い、緊急時の対応について書面でご確認いただきます。</span></li>
+      <li><span class="t">面談スタート</span><span class="d">開始後は半年に1回、三者面談で続けるかどうかを見直します。</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block tint">
+  <div class="container">
+    <span class="kicker">Form</span>
+    <h2 class="sec">お申し込みフォーム（見た目のみ）</h2>
+    <p class="body">入力項目のたたき台です。実際の送信機能はまだ実装していません。</p>
+    <form class="mockform" onsubmit="return false;">
+      <div class="field">
+        <label>お立場<span class="req">*</span></label>
+        <select disabled><option>保護者</option><option>ご本人</option><option>支援機関の方</option></select>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label>保護者の方のお名前<span class="req">*</span></label>
+          <input type="text" placeholder="山田 花子" disabled>
+        </div>
+        <div class="field">
+          <label>ご連絡先メールアドレス<span class="req">*</span></label>
+          <input type="email" placeholder="example@mail.com" disabled>
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label>お子さんの年齢</label>
+          <input type="text" placeholder="14歳" disabled>
+        </div>
+        <div class="field">
+          <label>学年</label>
+          <input type="text" placeholder="中学2年生" disabled>
+        </div>
+      </div>
+      <div class="field">
+        <label>現在の状況・ご相談内容</label>
+        <textarea placeholder="差し支えない範囲でお聞かせください" disabled></textarea>
+      </div>
+      <button type="submit" class="btn big">送信する（ダミー）</button>
+      <p class="note">このボタンは現在ダミーです。実際のお問い合わせは info@pbside.org までメールでお願いします。</p>
+    </form>
+  </div>
+</section>
+
+<div class="cta" id="contact">
+  <div class="tile t1"></div>
+  <div class="tile t2"></div>
+  <div class="container">
+    <h2>まずは、お話を聞かせてください</h2>
+    <p>相談だけでも構いません。無理な勧誘はしません。</p>
+    <a class="mail" href="mailto:info@pbside.org">info<span class="at">@</span>pbside.org</a>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <img src="assets/logo/plus-B-side_lockup_white.svg" alt="+B-side">
+        <dl class="org">
+          <dt>名称</dt><dd>+B-side（ビサイド）</dd>
+          <dt>設立</dt><dd>2026年8月予定 <span class="tbd">設立総会 未実施・日程調整中</span></dd>
+          <dt>所在地</dt><dd>神奈川県横浜市</dd>
+          <dt>共同代表</dt><dd>入安 にろ／入矢 翔一</dd>
+          <dt>連絡先</dt><dd>info@pbside.org</dd>
+        </dl>
+      </div>
+      <div>
+        <h4>サイトマップ</h4>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">団体について</a></li>
+          <li><a href="partner.html">連携をお考えの方へ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>情報公開</h4>
+        <ul>
+          <li><a href="about.html#rules">規約</a></li>
+          <li><a href="about.html#officers">役員名簿</a></li>
+          <li><a href="about.html#accounting">会計・活動報告</a></li>
+          <li><a href="about.html#privacy">個人情報の取り扱い</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 +B-side</span>
+      <span>任意団体として立ち上げ準備中。2026年10月、最初のお子さんをお迎えします。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

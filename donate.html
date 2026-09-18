@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>寄付ページ（案）｜+B-side</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/logo/plus-B_icon_tile.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Space+Mono:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-5); margin-top: var(--space-8); }
+  .tier { background: var(--surface); border-radius: var(--radius-card); padding: 30px 26px; box-shadow: var(--shadow-sm); border: 1.5px solid transparent; }
+  .tier.reco { border-color: var(--sky-300); box-shadow: var(--shadow-md); }
+  .tier .kind { font-size: var(--text-2xs); font-weight: 700; letter-spacing: 0.16em; color: var(--sky-600); display: block; margin-bottom: 10px; }
+  .tier .amt { font-family: var(--font-mono); font-size: 30px; font-weight: 700; display: block; }
+  .tier .amt span { font-size: var(--text-sm); font-weight: 700; color: var(--text-muted); }
+  .tier .dsc { font-size: var(--text-sm); color: var(--text-secondary); font-weight: 500; line-height: 1.85; margin-top: 12px; }
+  .paymethods { display: flex; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-6); }
+  .paymethod { background: var(--surface); border-radius: var(--radius-lg); padding: 16px 22px; box-shadow: var(--shadow-xs); font-weight: 700; font-size: var(--text-sm); display: flex; align-items: center; gap: 10px; }
+</style>
+</head>
+<body>
+
+<div class="draftbar conceptbar">
+  <div class="container">
+    <span class="tag">CONCEPT</span>
+    <span>これは検討用の見え方サンプルです。決済の実処理・応募フォームの送信機能はありません。noindexのため検索には出ません。URLを知っている人だけが見られます。</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/logo/plus-B-side_lockup_sky.svg" alt="+B-side"></a>
+    <nav class="site-nav">
+      <a href="donate.html" class="current">寄付ページ（案）</a>
+      <a href="volunteer.html">ボランティア募集（案）</a>
+      <a href="intake.html">子ども受け入れ（案）</a>
+      <a href="index.html">← 公開サイトへ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="tile t1"></div>
+  <div class="container">
+    <div class="crumbs"><a href="index.html">ホーム</a> ／ 寄付ページ（案）</div>
+    <h1>寄付でできること</h1>
+    <p>+B-sideの活動は、共同代表の負担金だけでは長く続けられません。サポーターの研修・緊急時の相談体制・無料枠の維持に、みなさんの寄付を役立てたいと考えています。</p>
+  </div>
+</div>
+
+<section class="block">
+  <div class="container">
+    <div class="callout warn">
+      <strong>現在、寄付の受付は行っていません。</strong>2026年度（初年度）は共同代表の負担金のみで運営し、寄付・助成金は受け入れない方針で進めています。このページは、受付を始める際の見え方を先に検討するための案です。
+    </div>
+  </div>
+</section>
+
+<section class="block tint">
+  <div class="container">
+    <span class="kicker">Why</span>
+    <h2 class="sec">なぜ寄付が必要か</h2>
+    <p class="body">+B-sideは、学校・行政からの委託収入だけで無料枠の子どもを支えるモデルを目指しています。ただし委託収入が軌道に乗るまでの間、サポーターの養成研修や緊急時に頼れる専門家への相談体制を維持するには、個人からの寄付が助けになります。</p>
+    <div class="factgrid">
+      <div class="factcard"><span class="label">USE 1</span><span class="val">サポーター養成研修</span><span class="note">書類選考・面接・研修にかかる費用</span></div>
+      <div class="factcard"><span class="label">USE 2</span><span class="val">緊急時の相談体制</span><span class="note">外部の臨床心理士・SSWへの相談</span></div>
+      <div class="factcard"><span class="label">USE 3</span><span class="val">無料枠の維持</span><span class="note">費用を理由に断らないための原資</span></div>
+      <div class="factcard"><span class="label">USE 4</span><span class="val">運営基盤</span><span class="note">記録管理システム・保険等<span class="tbd">要確認</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <span class="kicker">Ways to give</span>
+    <h2 class="sec">寄付の形（案）</h2>
+    <div class="tiers">
+      <div class="tier">
+        <span class="kind">継続寄付</span>
+        <span class="amt">¥1,000<span>／月</span></span>
+        <p class="dsc">サポーター1名の研修費の一部を支える</p>
+      </div>
+      <div class="tier reco">
+        <span class="kind">継続寄付・おすすめ</span>
+        <span class="amt">¥3,000<span>／月</span></span>
+        <p class="dsc">子ども1名の無料枠を年間通じて支える目安</p>
+      </div>
+      <div class="tier">
+        <span class="kind">継続寄付</span>
+        <span class="amt">¥5,000<span>／月</span></span>
+        <p class="dsc">緊急時の外部専門家への相談体制を支える</p>
+      </div>
+      <div class="tier">
+        <span class="kind">単発寄付</span>
+        <span class="amt">任意金額</span>
+        <p class="dsc">1回のみのご寄付。金額はご自身でお決めいただけます</p>
+      </div>
+    </div>
+    <div class="paymethods">
+      <div class="paymethod">クレジットカード<span class="tbd">未選定</span></div>
+      <div class="paymethod">銀行振込<span class="tbd">未選定</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block tint">
+  <div class="container">
+    <span class="kicker">Tax</span>
+    <h2 class="sec">税制優遇について</h2>
+    <p class="body">+B-sideは現在「任意団体」のため、いただいた寄付は寄付金控除の対象になりません。将来的に一般社団法人化・認定NPO法人化を検討する中で、税制優遇の対象にできるかを合わせて検討していきます。</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <span class="kicker">Transparency</span>
+    <h2 class="sec">使いみちの公開</h2>
+    <p class="body">寄付金の受け入れを始める際は、金額・使途を毎年度の活動報告・会計報告で公開します。現在の会計方針は <a class="link" href="about.html#accounting">団体について＞会計・活動報告</a> に掲載しています。</p>
+  </div>
+</section>
+
+<section class="block tint" id="faq">
+  <div class="container">
+    <span class="kicker">FAQ</span>
+    <h2 class="sec">よくあるご質問（案）</h2>
+    <div class="faq">
+      <details>
+        <summary>いつから寄付を受け付けますか？</summary>
+        <div class="a">未定です。2026年10月に始めるパイロットの実績を見たうえで、受付開始の時期を決める予定です。</div>
+      </details>
+      <details>
+        <summary>継続寄付はいつでもやめられますか？</summary>
+        <div class="a">はい。受付を始める際は、いつでも停止できる仕組みにする方針です。</div>
+      </details>
+      <details>
+        <summary>使いみちは寄付者にも個別に伝わりますか？</summary>
+        <div class="a">個別のご報告方法は未定ですが、少なくとも年1回の活動報告・会計報告はどなたでも見られる形で公開します。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="cta" id="contact">
+  <div class="tile t1"></div>
+  <div class="tile t2"></div>
+  <div class="container">
+    <h2>寄付について、先に相談したい方へ</h2>
+    <p>本格的な受付開始前の段階でも、ご関心・ご質問のご連絡は歓迎します。</p>
+    <a class="mail" href="mailto:info@pbside.org">info<span class="at">@</span>pbside.org</a>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <img src="assets/logo/plus-B-side_lockup_white.svg" alt="+B-side">
+        <dl class="org">
+          <dt>名称</dt><dd>+B-side（ビサイド）</dd>
+          <dt>設立</dt><dd>2026年8月予定 <span class="tbd">設立総会 未実施・日程調整中</span></dd>
+          <dt>所在地</dt><dd>神奈川県横浜市</dd>
+          <dt>共同代表</dt><dd>入安 にろ／入矢 翔一</dd>
+          <dt>連絡先</dt><dd>info@pbside.org</dd>
+        </dl>
+      </div>
+      <div>
+        <h4>サイトマップ</h4>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">団体について</a></li>
+          <li><a href="partner.html">連携をお考えの方へ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>情報公開</h4>
+        <ul>
+          <li><a href="about.html#rules">規約</a></li>
+          <li><a href="about.html#officers">役員名簿</a></li>
+          <li><a href="about.html#accounting">会計・活動報告</a></li>
+          <li><a href="about.html#privacy">個人情報の取り扱い</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 +B-side</span>
+      <span>任意団体として立ち上げ準備中。2026年10月、最初のお子さんをお迎えします。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
