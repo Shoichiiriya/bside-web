@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>+B-side｜聴かれる体験を、すべての子どもへ。</title>
+<meta name="description" content="不登校・学校がしんどい12〜19歳に、研修を受けた少し年上のサポーターが1対1・オンラインで話をただ聴きます。アドバイスも解決も評価もしません。">
+<link rel="icon" href="assets/logo/plus-B_icon_tile.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Space+Mono:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .hero { position: relative; overflow: hidden; background: var(--bg-page); padding: 92px 0 104px; }
+  .hero .tile { position: absolute; border-radius: 22%; }
+  .hero .t1 { width: 340px; height: 340px; right: -100px; top: -120px; background: var(--sky-100); }
+  .hero .t2 { width: 220px; height: 220px; right: 200px; bottom: -110px; background: var(--sky-50); }
+  .hero .t3 { width: 160px; height: 160px; left: -60px; bottom: 40px; background: var(--sky-50); }
+  .hero .container { position: relative; }
+  .hero .split { display: grid; grid-template-columns: 1.02fr 0.98fr; gap: var(--space-12); align-items: center; }
+  .hero h1 { font-size: clamp(30px, 4.6vw, 48px); font-weight: 900; line-height: 1.45; letter-spacing: 0.02em; margin-bottom: var(--space-6); }
+  .hero h1 .accent { color: var(--sky-500); }
+  .hero p.lead { margin-bottom: var(--space-8); }
+  .hero .actions { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+  .hero .shot { position: relative; }
+  .hero .shot img {
+    width: 100%; height: 420px; object-fit: cover; object-position: 58% 45%;
+    border-radius: var(--radius-2xl); box-shadow: 0 18px 48px rgba(27,38,44,0.16);
+    display: block;
+  }
+  .hero .shot .cap {
+    display: block; margin-top: 10px; font-size: var(--text-2xs);
+    color: var(--text-muted); font-weight: 500; text-align: right;
+  }
+  @media (max-width: 900px) {
+    .hero .split { grid-template-columns: 1fr; gap: var(--space-8); }
+    .hero .shot img { height: 260px; }
+  }
+  .illust-row { display: grid; grid-template-columns: 1fr 340px; gap: var(--space-12); align-items: center; }
+  .illust-row.rev { grid-template-columns: 340px 1fr; }
+  .illust-row img { width: 100%; max-width: 340px; height: auto; display: block; }
+  @media (max-width: 760px) {
+    .illust-row, .illust-row.rev { grid-template-columns: 1fr; gap: var(--space-6); }
+    .illust-row .pic { order: -1; }
+    .illust-row img { max-width: 240px; }
+  }
+  .entry {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-4); margin-top: var(--space-12);
+  }
+  .entry a {
+    background: var(--surface); border-radius: var(--radius-card); padding: 24px 26px;
+    box-shadow: var(--shadow-sm); transition: var(--transition-control);
+    border: 1.5px solid transparent;
+  }
+  .entry a:hover { border-color: var(--sky-300); transform: translateY(-2px); }
+  .entry .who { font-size: var(--text-2xs); font-weight: 700; letter-spacing: 0.2em; color: var(--sky-600); display: block; margin-bottom: 8px; }
+  .entry .ttl { font-weight: 900; font-size: var(--text-base); display: block; margin-bottom: 6px; }
+  .entry .dsc { font-size: var(--text-sm); color: var(--text-secondary); font-weight: 500; line-height: 1.75; }
+  @media (max-width: 640px) { .hero { padding: 56px 0 64px; } }
+</style>
+</head>
+<body>
+
+<div class="draftbar">
+  <div class="container">
+    <span class="tag">DRAFT</span>
+    <span>これは公開前のたたき台です。<mark class="q">黄色マーカー</mark>と「要確認」「仮」バッジの箇所は、未確定またはダミーの内容です。→ <a class="link" href="checklist.html">公開までに決めること一覧</a></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="assets/logo/plus-B-side_lockup_sky.svg" alt="+B-side"></a>
+    <nav class="site-nav">
+      <a href="index.html" class="current">ホーム</a>
+      <a href="about.html">団体について</a>
+      <a href="partner.html">連携をお考えの方へ</a>
+      <a href="checklist.html" class="internal">［内部］決めること</a>
+      <a class="btn" href="#contact">相談してみる</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="tile t1"></div><div class="tile t2"></div><div class="tile t3"></div>
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="kicker">Online listening for teens</span>
+        <h1>聴かれる体験を、<br>すべての<span class="accent">子ども</span>へ。</h1>
+        <p class="lead">不登校・学校がしんどい12〜19歳に、研修を受けた少し年上のサポーターが1対1・オンラインで、話をただ聴きます。家族でも、先生でも、友達でもない関係だからこそ、話せることがあります。</p>
+        <div class="actions">
+          <a class="btn big" href="#contact">まずは話を聞かせてください</a>
+          <a class="btn big ghost" href="about.html">団体について知る</a>
+        </div>
+      </div>
+      <div class="shot">
+        <img src="assets/img/hero-meeting.jpg" alt="自宅の机でノートパソコンを開いて話している利用者の子どもと、画面越しに笑顔で話を聴いているボランティアサポーター">
+        <span class="cap">※写真はイメージです</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <a href="#worries">
+        <span class="who">FOR PARENTS</span>
+        <span class="ttl">保護者の方へ</span>
+        <span class="dsc">どんな子が対象か、費用、始めるまでの流れ</span>
+      </a>
+      <a href="#for-you">
+        <span class="who">FOR YOU</span>
+        <span class="ttl">きみへ</span>
+        <span class="dsc">話す相手がほしい、でも相談じゃない方がいい人へ</span>
+      </a>
+      <a href="partner.html">
+        <span class="who">FOR PARTNERS</span>
+        <span class="ttl">学校・行政・支援団体の方へ</span>
+        <span class="dsc">紹介の流れ、個人情報の扱い、緊急時の連携</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="block tint" id="worries">
+  <div class="container">
+    <span class="kicker">For parents</span>
+    <h2 class="sec">こんなお悩み、ありませんか？</h2>
+    <ul class="checklist">
+      <li>お子さんが、家族には本音を話してくれない</li>
+      <li>学校の先生やスクールカウンセラー以外に、話せる大人がいない</li>
+      <li>進路や将来のことで悩んでいそうだけど、聞いても「別に」としか言わない</li>
+      <li>「大丈夫」しか言わないけど、本当に大丈夫か分からない</li>
+      <li>カウンセリングに行くほどではない気がして、どこにも相談できていない</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="for-you">
+  <div class="container">
+    <span class="kicker">For you</span>
+    <h2 class="sec">きみへ</h2>
+    <div class="illust-row">
+      <div class="to-kids-card">
+      家族に心配かけたくなくて言えないこと、友達には浮きそうで言えないこと、ありませんか。対面はちょっと緊張するけど、オンラインならもう少し話せる気がする——そんな感覚のための場所です。<br><strong>アドバイスも、説教も、しません。ただ聞きます。</strong><br>話すことがなくても大丈夫です。ゲームの話でも、昨日見た動画の話でもかまいません。
+      </div>
+      <div class="pic"><img src="assets/img/illust-talking.png" alt="ヘッドホンをつけて自宅のパソコンの前で笑いながら話している子どものイラスト"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block sunken" id="what">
+  <div class="container">
+    <span class="kicker">What we do</span>
+    <h2 class="sec">+B-sideがすること</h2>
+    <div class="illust-row">
+      <div>
+        <p class="lead">研修を受けた少し年上のサポーターが、1対1・オンラインで、お子さんの話をただ聴きます。話したことそのものに意味がある、と私たちは考えます。</p>
+        <div class="no3">
+          <span>アドバイスしません</span>
+          <span>解決しようとしません</span>
+          <span>評価もしません</span>
+        </div>
+      </div>
+      <div class="pic"><img src="assets/img/illust-listening.png" alt="画面越しに相手の話を聴いているサポーターのイラスト"></div>
+    </div>
+    <div class="factgrid">
+      <div class="factcard"><span class="label">対象</span><span class="val">12〜19歳</span><span class="note">不登校・学校がしんどい中高生。関東中心、オンラインのため全国対応可</span></div>
+      <div class="factcard"><span class="label">頻度・時間</span><span class="val">月1〜週1回</span><span class="note">1回30分〜1時間。ペースは相談して決めます</span></div>
+      <div class="factcard"><span class="label">方法</span><span class="val">オンライン</span><span class="note">Google Meetを使用します</span></div>
+      <div class="factcard"><span class="label">期間</span><span class="val">年度単位</span><span class="note">4月〜3月。やめたいときはやめられます</span></div>
+      <div class="factcard"><span class="label">費用</span><span class="val">無料（初年度）</span><span class="note">団体のトライアルのため初年度は利用料をいただきません。通信費等はご家庭のご負担となります</span></div>
+      <div class="factcard"><span class="label">定員</span><span class="val">初年度 若干名</span><span class="note">2026年度はパイロット実施のため若干名に限らせていただきます</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="difference">
+  <div class="container">
+    <span class="kicker">How we differ</span>
+    <h2 class="sec">ほかの支援との違い</h2>
+    <p class="body">+B-sideは、既にある支援に取って代わるものではありません。<strong>ほかの支援と並行して使えます。</strong>「目的を持たずに話す相手」という、意外と空いている枠を埋めるのが役割です。</p>
+    <div class="tablewrap">
+      <table class="data">
+        <thead>
+          <tr><th>　</th><th class="own">+B-side</th><th>スクールカウンセラー</th><th>チャット相談窓口</th><th>学習支援・塾</th><th>フリースクール</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>目的</th><td class="own">ただ聴かれる体験そのもの</td><td>心理的課題の相談・見立て</td><td>困りごとの一次受け</td><td>学力・進路</td><td>日中の居場所・学び</td></tr>
+          <tr><th>話す相手</th><td class="own">研修を受けた少し年上の学生・社会人</td><td>臨床心理士等の専門職</td><td>相談員（多くは毎回異なる）</td><td>講師・スタッフ</td><td>スタッフ・他の子ども</td></tr>
+          <tr><th>関係の続き方</th><td class="own">同じ人が年度を通して継続</td><td>学校在籍中・枠が取れれば</td><td>基本は単発</td><td>継続</td><td>継続</td></tr>
+          <tr><th>頻度</th><td class="own">月1〜週1回・30〜60分</td><td>月1〜2回程度</td><td>随時</td><td>週1〜数回</td><td>週数回〜毎日</td></tr>
+          <tr><th>場所</th><td class="own">オンライン（自宅から）</td><td>学校</td><td>オンライン</td><td>教室・オンライン</td><td>施設</td></tr>
+          <tr><th>費用</th><td class="own">無料（初年度）</td><td>無料</td><td>無料</td><td>有料</td><td>多くは有料</td></tr>
+          <tr><th>学校とのつながり</th><td class="own">ありません（学校に報告しません）</td><td>あり</td><td>なし</td><td>なし</td><td>出席扱いの相談あり</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout">
+      <strong>「学校に伝わらない」ことを大事にしています。</strong><br>
+      スクールカウンセラーは学校の中の人であるがゆえに話せないことがあります。私たちは学校とつながっていないので、そこで話せることがあると考えています。
+    </div>
+  </div>
+</section>
+
+<section class="block tint" id="values">
+  <div class="container">
+    <span class="kicker">Values</span>
+    <h2 class="sec">大切にしていること</h2>
+    <div class="values">
+      <div class="value">
+        <span class="num">01</span>
+        <h3>ただ聴く</h3>
+        <p>理解でも解決でもなく、ただ受け止める。その積み重ねが「自分はここにいていい」という実感になっていきます。</p>
+      </div>
+      <div class="value">
+        <span class="num">02</span>
+        <h3>斜めの関係</h3>
+        <p>家族でも先生でも友達でもない。評価もしがらみもない関係だからこそ、どこにも話せなかったことが出てくることがあります。</p>
+      </div>
+      <div class="value">
+        <span class="num">03</span>
+        <h3>種を渡す</h3>
+        <p>すぐの変化を求めません。「あの時、誰かが話を聴いてくれた」という記憶は、数年後に壁にぶつかったとき、その人を支えます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="flow">
+  <div class="container">
+    <span class="kicker">Steps</span>
+    <h2 class="sec">はじめるまでの流れ</h2>
+    <p class="body">お問い合わせから面談開始まで、おおむね3〜4週間ほどいただいています。</p>
+    <ol class="steps">
+      <li><span class="t">お問い合わせ</span><span class="d">保護者の方、ご本人、支援機関のいずれからでも受け付けます。メールフォームまたはメールでご連絡ください。7営業日以内にご返信します。</span></li>
+      <li><span class="t">保護者面談（30分・オンライン）</span><span class="d">活動内容と進め方をご説明し、ご家庭の状況をうかがいます。この時点でのお断り・見送りも問題ありません。</span></li>
+      <li><span class="t">ご本人との顔合わせ（20分程度）</span><span class="d">ご本人が話してみたいと思えるかを確認します。気が進まない場合は無理に進めません。</span></li>
+      <li><span class="t">サポーターのマッチング</span><span class="d">ご本人の様子・関心をふまえて担当を決めます。合わない場合は、交代について都度ご相談を受け付けます。</span></li>
+      <li><span class="t">同意書の取り交わし</span><span class="d">個人情報の取り扱い、緊急時の対応について書面でご確認いただきます。</span></li>
+      <li><span class="t">面談スタート・定期フォロー</span><span class="d">開始後は半年に1回、保護者・ご本人・運営で三者面談を行い、続けるかどうかを見直します。</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block sunken" id="safety">
+  <div class="container">
+    <span class="kicker">Safety</span>
+    <h2 class="sec">安心して利用いただくために</h2>
+    <ul class="dotlist">
+      <li>面談開始前に、保護者の方と個別に面談し、活動内容を直接ご説明します。開始後も半年に1回、三者面談を実施します</li>
+      <li>サポーターは、書類選考・面接・養成研修を経て登録された者のみが担当します</li>
+      <li>面談は運営が用意したアカウントで実施し、サポーターと子どもが個人の連絡先を交換することを禁止しています</li>
+      <li>面談ごとに記録を残し、運営が内容を確認します。記録は<mark class="q">アクセス権限を限定した環境</mark>で管理し、第三者には開示しません <span class="tbd">ツール未選定</span></li>
+      <li>自傷・虐待など緊急性の高い状況が確認された場合は、ご本人の意思を尊重しつつ、保護者・専門機関へおつなぎします。この例外は開始時に必ずご説明します</li>
+      <li>学習支援・居場所支援など他の支援を利用中の方も、並行して利用できます</li>
+      <li>宗教・政治活動、物品の販売、他サービスへの勧誘は一切行いません</li>
+    </ul>
+    <p class="body" style="margin-top:var(--space-8)">詳しい体制・規約・個人情報の取り扱いは<a class="link" href="about.html">団体について</a>をご覧ください。</p>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="container">
+    <span class="kicker">FAQ</span>
+    <h2 class="sec">よくあるご質問</h2>
+    <div class="faq">
+      <details open>
+        <summary>話した内容は親に伝わりますか？</summary>
+        <div class="a">詳しい面談内容はお伝えしません。「親に言われるかもしれない」と思うと話せなくなるためです。概要をお伝えするかどうか、どこまでお伝えするかは、その都度お子さんとご相談のうえ決めます。ただし、命や安全に関わる内容（自傷・虐待・犯罪被害など）については例外として保護者や専門機関に共有します。この例外は、開始時にご本人と保護者の双方に必ずご説明します。</div>
+      </details>
+      <details>
+        <summary>学校には伝わりますか？</summary>
+        <div class="a">伝わりません。私たちは学校とつながっていません。学校経由でご紹介いただいた場合も、面談の内容そのものを学校へ報告することはありません。紹介元への報告範囲は、開始前に三者で合意した内容に限ります。</div>
+      </details>
+      <details>
+        <summary>費用はかかりますか？</summary>
+        <div class="a">初年度（2026年度）は無料です。団体のトライアルのため、利用料はいただきません。通信環境・端末はご家庭でご用意ください。次年度以降の費用は改めてお知らせします。</div>
+      </details>
+      <details>
+        <summary>不登校でなくても利用できますか？</summary>
+        <div class="a">はい。学校に通いながら「しんどい」を抱えている方も対象です。「不登校であること」は条件ではありません。</div>
+      </details>
+      <details>
+        <summary>サポーターはどんな人ですか？</summary>
+        <div class="a"><mark class="q">大学生から20代の社会人が中心です。</mark>心理やカウンセリングの専門家ではありません。「少し年上の、評価してこない人」であることを大事にしています。全員が書類選考・面接・養成研修を経て登録されています。 <span class="tbd">募集要件 未確定</span></div>
+      </details>
+      <details>
+        <summary>途中でやめられますか？</summary>
+        <div class="a">いつでもやめられます。理由をお伝えいただく必要もありません。合わないと感じた場合は、担当の交代もご相談ください。</div>
+      </details>
+      <details>
+        <summary>子どもが乗り気ではないのですが</summary>
+        <div class="a">ご本人が気が進まない状態で始めても続きません。まず保護者の方だけでご相談いただき、ご本人には「そういう場所があるらしい」とだけ伝えておく、という進め方もできます。</div>
+      </details>
+      <details>
+        <summary>カウンセリングとは違うのですか？</summary>
+        <div class="a">違います。私たちは心理の専門機関ではなく、見立てや治療は行いません。医療・心理的なケアが必要な状態の場合は、適切な機関をご案内します。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="block tint" id="team">
+  <div class="container">
+    <span class="kicker">Team</span>
+    <h2 class="sec">運営体制</h2>
+    <div class="values" style="max-width:720px">
+      <div class="value">
+        <span class="num">共同代表</span>
+        <h3>入安 にろ</h3>
+        <p>認定NPO法人チャンスフォーチルドレン出身／こども家庭庁 出向中（現職）</p>
+      </div>
+      <div class="value">
+        <span class="num">共同代表</span>
+        <h3>入矢 翔一</h3>
+        <p>認定NPO法人チャンスフォーチルドレン出身</p>
+      </div>
+    </div>
+    <p class="body" style="margin-top:var(--space-8)">団体概要・規約・会計方針は<a class="link" href="about.html">団体について</a>に掲載しています。</p>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="tile t1"></div><div class="tile t2"></div>
+  <div class="container">
+    <span class="kicker" style="color:var(--sky-300)">Contact</span>
+    <h2>まずは、お話を聞かせてください。</h2>
+    <p>メールをいただければ、まず保護者の方と30分ほどオンラインでお話しし、活動内容と進め方をご説明します。相談だけでも構いません。無理な勧誘はしません。</p>
+    <a class="mail" href="mailto:info@pbside.org">info<span class="at">@</span>pbside.org</a>
+    <a class="btn big" href="mailto:info@pbside.org">メールを送る</a>
+    <p style="margin-top:var(--space-6); font-size:var(--text-sm)"><mark class="q">お問い合わせフォームは準備中です。</mark> <span class="tbd">フォーム未作成</span></p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <img src="assets/logo/plus-B-side_lockup_white.svg" alt="+B-side">
+        <dl class="org">
+          <dt>名称</dt><dd>+B-side（ビサイド）</dd>
+          <dt>設立</dt><dd>2026年8月予定 <span class="tbd">設立総会 未実施・日程調整中</span></dd>
+          <dt>所在地</dt><dd>神奈川県横浜市</dd>
+          <dt>共同代表</dt><dd>入安 にろ／入矢 翔一</dd>
+          <dt>連絡先</dt><dd>info@pbside.org</dd>
+        </dl>
+      </div>
+      <div>
+        <h4>サイトマップ</h4>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">団体について</a></li>
+          <li><a href="partner.html">連携をお考えの方へ</a></li>
+          <li><a href="index.html#faq">よくあるご質問</a></li>
+          <li><a href="index.html#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>情報公開</h4>
+        <ul>
+          <li><a href="about.html#rules">規約</a></li>
+          <li><a href="about.html#officers">役員名簿</a></li>
+          <li><a href="about.html#accounting">会計・活動報告</a></li>
+          <li><a href="about.html#privacy">個人情報の取り扱い</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 +B-side</span>
+      <span>任意団体として立ち上げ準備中。2026年10月、最初のお子さんをお迎えします。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

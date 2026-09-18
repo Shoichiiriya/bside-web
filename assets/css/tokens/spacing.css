@@ -1,0 +1,48 @@
+/* =============================================================
+   +B-side · Spacing & Layout Tokens
+   4px base grid.
+   ============================================================= */
+
+:root {
+  --space-0:    0;
+  --space-px:   1px;
+  --space-0-5:  2px;
+  --space-1:    4px;
+  --space-2:    8px;
+  --space-3:    12px;
+  --space-4:    16px;
+  --space-5:    20px;
+  --space-6:    24px;
+  --space-7:    28px;
+  --space-8:    32px;
+  --space-10:   40px;
+  --space-12:   48px;
+  --space-14:   56px;
+  --space-16:   64px;
+  --space-20:   80px;
+  --space-24:   96px;
+  --space-32:   128px;
+  --space-40:   160px;
+
+  /* ---- Semantic layout ---- */
+  --gutter:        var(--space-6);   /* grid gutter */
+  --page-pad-x:    var(--space-6);   /* mobile page inset */
+  --page-pad-x-lg: var(--space-12);  /* desktop page inset */
+  --stack-tight:   var(--space-2);
+  --stack:         var(--space-4);
+  --stack-loose:   var(--space-8);
+  --section-gap:   var(--space-20);
+
+  /* ---- Container widths ---- */
+  --container-sm:  640px;
+  --container-md:  768px;
+  --container-lg:  1024px;
+  --container-xl:  1200px;
+  --container-2xl: 1360px;
+
+  /* ---- Control heights ---- */
+  --control-h-sm: 32px;
+  --control-h-md: 40px;
+  --control-h-lg: 48px;
+  --control-h-xl: 56px;
+}

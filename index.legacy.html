@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>+B-side｜聴かれる体験を、すべての子どもへ。</title>
+<meta name="description" content="不登校・学校がしんどい12〜19歳に、研修を受けた少し年上のサポーターが1対1・オンラインで話をただ聴きます。アドバイスも解決も評価もしません。">
+<link rel="icon" href="assets/logo/plus-B_icon_tile.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Space+Mono:wght@400;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+  body { font-family: "Zen Maru Gothic", var(--font-sans); }
+
+  .container { max-width: var(--container-lg); margin: 0 auto; padding: 0 var(--page-pad-x); }
+
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs); font-weight: 700;
+    letter-spacing: var(--tracking-widest); text-transform: uppercase;
+    color: var(--sky-600);
+    display: block; margin-bottom: var(--space-3);
+  }
+
+  /* ── header ── */
+  .site-header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .site-header .container {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .site-header img { height: 30px; }
+  .btn {
+    display: inline-block;
+    background: var(--brand); color: var(--on-brand);
+    font-weight: 900; font-size: var(--text-sm);
+    padding: 10px 22px; border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-sky-soft);
+    transition: var(--transition-control);
+  }
+  .btn:hover { background: var(--brand-hover); color: #fff; transform: translateY(-1px); }
+  .btn.big { font-size: var(--text-base); padding: 14px 32px; }
+
+  /* ── hero ── */
+  .hero { position: relative; overflow: hidden; background: var(--bg-page); padding: 96px 0 110px; }
+  .hero .tile { position: absolute; border-radius: 22%; }
+  .hero .t1 { width: 340px; height: 340px; right: -100px; top: -120px; background: var(--sky-100); }
+  .hero .t2 { width: 220px; height: 220px; right: 200px; bottom: -110px; background: var(--sky-50); }
+  .hero .t3 { width: 160px; height: 160px; left: -60px; bottom: 40px; background: var(--sky-50); }
+  .hero .container { position: relative; }
+  .hero h1 {
+    font-size: clamp(30px, 5.4vw, 52px); font-weight: 900;
+    line-height: 1.45; letter-spacing: 0.02em;
+    margin-bottom: var(--space-6);
+  }
+  .hero h1 .accent { color: var(--sky-500); }
+  .hero p.lead {
+    font-size: var(--text-md); line-height: 2; font-weight: 500;
+    color: var(--text-secondary); max-width: 40em; margin-bottom: var(--space-8);
+  }
+
+  /* ── sections ── */
+  section.block { padding: 88px 0; }
+  section.block.tint { background: var(--sky-50); }
+  section.block.sunken { background: var(--bg-page); }
+  h2.sec {
+    font-size: clamp(24px, 3.6vw, 34px); font-weight: 900;
+    margin-bottom: var(--space-6); letter-spacing: 0.02em;
+  }
+
+  .checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); max-width: 44em; }
+  .checklist li {
+    background: var(--surface); border-radius: var(--radius-lg);
+    padding: 16px 20px 16px 52px; position: relative;
+    font-weight: 500; box-shadow: var(--shadow-xs);
+  }
+  .checklist li::before {
+    content: ""; position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+    width: 18px; height: 18px; border-radius: 35%; background: var(--sky-500);
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') center/contain no-repeat;
+            mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>') center/contain no-repeat;
+  }
+
+  .to-kids-card {
+    background: var(--surface); border: 1.5px solid var(--sky-300);
+    border-radius: var(--radius-card); padding: 32px 36px;
+    max-width: 46em; line-height: 2; font-weight: 500;
+  }
+  .to-kids-card strong { font-weight: 900; }
+
+  .no3 { display: flex; flex-wrap: wrap; gap: var(--space-3); margin: var(--space-6) 0; }
+  .no3 span {
+    background: var(--ink-800); color: #fff;
+    border-radius: var(--radius-pill); padding: 10px 26px;
+    font-weight: 900; letter-spacing: 0.06em;
+  }
+
+  .factgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); margin-top: var(--space-8); }
+  .factcard {
+    background: var(--surface); border-radius: var(--radius-card);
+    padding: 24px; box-shadow: var(--shadow-sm);
+  }
+  .factcard .label {
+    font-size: var(--text-2xs); font-weight: 700;
+    letter-spacing: 0.2em; color: var(--sky-600);
+    display: block; margin-bottom: 8px;
+  }
+  .factcard .val { font-size: var(--text-lg); font-weight: 900; display: block; margin-bottom: 6px; }
+  .factcard .note { font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.7; font-weight: 500; }
+
+  .values { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-5); }
+  .value {
+    background: var(--surface); border-radius: var(--radius-card);
+    padding: 32px 28px; box-shadow: var(--shadow-sm);
+  }
+  .value .num {
+    font-family: var(--font-mono); font-weight: 700; color: var(--sky-500);
+    letter-spacing: var(--tracking-wider); font-size: var(--text-sm);
+  }
+  .value h3 { font-size: var(--text-xl); font-weight: 900; margin: 10px 0 12px; }
+  .value p { font-size: var(--text-sm); line-height: 1.9; color: var(--text-secondary); font-weight: 500; }
+
+  .safety-list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-4); max-width: 46em; }
+  .safety-list li {
+    position: relative; padding-left: 30px;
+    line-height: 1.9; font-weight: 500;
+  }
+  .safety-list li::before {
+    content: ""; position: absolute; left: 0; top: 9px;
+    width: 12px; height: 12px; border-radius: 50%; background: var(--sky-500);
+  }
+
+  .team { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-5); max-width: 720px; }
+  .member {
+    background: var(--surface); border-radius: var(--radius-card);
+    padding: 28px; box-shadow: var(--shadow-sm);
+  }
+  .member .role {
+    font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.2em; color: var(--sky-600);
+  }
+  .member .name { font-size: var(--text-xl); font-weight: 900; margin: 6px 0 8px; }
+  .member .bio { font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.8; font-weight: 500; }
+
+  /* ── CTA ── */
+  .cta {
+    background: var(--dark-surface); color: #fff;
+    padding: 96px 0; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .cta .tile { position: absolute; border-radius: 22%; }
+  .cta .t1 { width: 280px; height: 280px; left: -90px; top: -90px; background: rgba(255,255,255,0.05); }
+  .cta .t2 { width: 320px; height: 320px; right: -110px; bottom: -130px; background: rgba(51,181,229,0.14); }
+  .cta .container { position: relative; }
+  .cta h2 { color: #fff; font-size: clamp(24px, 3.6vw, 34px); font-weight: 900; margin-bottom: var(--space-4); }
+  .cta p { color: var(--text-on-dark-muted); line-height: 2; max-width: 38em; margin: 0 auto var(--space-6); font-weight: 500; }
+  .cta .mail {
+    font-family: var(--font-display);
+    font-size: clamp(24px, 4.5vw, 40px); font-weight: 800; color: #fff;
+    display: block; margin-bottom: var(--space-8);
+  }
+  .cta .mail .at { color: var(--sky-400); }
+
+  footer.site {
+    background: var(--dark-surface-2); color: var(--text-on-dark-muted);
+    padding: 40px 0; text-align: center; font-size: var(--text-xs); font-weight: 500;
+  }
+  footer.site img { height: 22px; margin: 0 auto 14px; opacity: 0.9; }
+
+  @media (max-width: 640px) {
+    .hero { padding: 64px 0 72px; }
+    section.block { padding: 64px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <img src="assets/logo/plus-B-side_lockup_sky.svg" alt="+B-side">
+    <a class="btn" href="mailto:info@pbside.org">相談してみる</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="tile t1"></div><div class="tile t2"></div><div class="tile t3"></div>
+  <div class="container">
+    <span class="kicker">Online listening for teens</span>
+    <h1>聴かれる体験を、<br>すべての<span class="accent">子ども</span>へ。</h1>
+    <p class="lead">不登校・学校がしんどい12〜19歳に、研修を受けた少し年上のサポーターが1対1・オンラインで、話をただ聴きます。家族でも、先生でも、友達でもない関係だからこそ、話せることがあります。</p>
+    <a class="btn big" href="mailto:info@pbside.org">まずは話を聞かせてください</a>
+  </div>
+</section>
+
+<section class="block tint" id="worries">
+  <div class="container">
+    <span class="kicker">For parents</span>
+    <h2 class="sec">こんなお悩み、ありませんか？</h2>
+    <ul class="checklist">
+      <li>お子さんが、家族には本音を話してくれない</li>
+      <li>学校の先生やスクールカウンセラー以外に、話せる大人がいない</li>
+      <li>進路や将来のことで悩んでいそうだけど、聞いても「別に」としか言わない</li>
+      <li>「大丈夫」しか言わないけど、本当に大丈夫か分からない</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="for-you">
+  <div class="container">
+    <span class="kicker">For you</span>
+    <h2 class="sec">きみへ</h2>
+    <div class="to-kids-card">
+      家族に心配かけたくなくて言えないこと、友達には浮きそうで言えないこと、ありませんか。対面はちょっと緊張するけど、オンラインならもう少し話せる気がする——そんな感覚のための場所です。<br><strong>アドバイスも、説教も、しません。ただ聞きます。</strong>
+    </div>
+  </div>
+</section>
+
+<section class="block sunken" id="about">
+  <div class="container">
+    <span class="kicker">What we do</span>
+    <h2 class="sec">+B-sideがすること</h2>
+    <p style="max-width:44em; line-height:2; font-weight:500; color:var(--text-secondary);">研修を受けた少し年上のサポーターが、1対1・オンラインで、お子さんの話をただ聴きます。話したことそのものに意味がある、と私たちは考えます。</p>
+    <div class="no3">
+      <span>アドバイスしません</span>
+      <span>解決しようとしません</span>
+      <span>評価もしません</span>
+    </div>
+    <div class="factgrid">
+      <div class="factcard"><span class="label">対象</span><span class="val">12〜19歳</span><span class="note">不登校・学校がしんどい中高生。関東中心、オンラインのため全国対応可</span></div>
+      <div class="factcard"><span class="label">頻度・時間</span><span class="val">月1〜週1回</span><span class="note">1回30分〜1時間。ペースは相談して決めます</span></div>
+      <div class="factcard"><span class="label">方法</span><span class="val">オンライン</span><span class="note">Google Meetを使用します</span></div>
+      <div class="factcard"><span class="label">期間</span><span class="val">年度単位</span><span class="note">4月〜3月。やめたいときはやめられます</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="values">
+  <div class="container">
+    <span class="kicker">Values</span>
+    <h2 class="sec">大切にしていること</h2>
+    <div class="values">
+      <div class="value">
+        <span class="num">01</span>
+        <h3>ただ聴く</h3>
+        <p>理解でも解決でもなく、ただ受け止める。その積み重ねが「自分はここにいていい」という実感になっていきます。</p>
+      </div>
+      <div class="value">
+        <span class="num">02</span>
+        <h3>斜めの関係</h3>
+        <p>家族でも先生でも友達でもない。評価もしがらみもない関係だからこそ、どこにも話せなかったことが出てくることがあります。</p>
+      </div>
+      <div class="value">
+        <span class="num">03</span>
+        <h3>種を渡す</h3>
+        <p>すぐの変化を求めません。「あの時、誰かが話を聴いてくれた」という記憶は、数年後に壁にぶつかったとき、その人を支えます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block tint" id="safety">
+  <div class="container">
+    <span class="kicker">Safety</span>
+    <h2 class="sec">安心して利用いただくために</h2>
+    <ul class="safety-list">
+      <li>面談開始前に、保護者の方と個別に面談し、活動内容を直接ご説明します。開始後も半年に1回、三者面談を実施します</li>
+      <li>自傷・虐待など緊急性の高い状況が確認された場合は、保護者・専門機関へおつなぎします</li>
+      <li>個人情報・面談内容は厳重に管理し、第三者に開示しません</li>
+      <li>学習支援・居場所支援など他の支援を利用中の方も、並行して利用できます</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="team">
+  <div class="container">
+    <span class="kicker">Team</span>
+    <h2 class="sec">運営体制</h2>
+    <div class="team">
+      <div class="member">
+        <span class="role">代表</span>
+        <div class="name">入安 にろ</div>
+        <div class="bio">認定NPO法人チャンスフォーチルドレン出身／こども家庭庁 出向中（現職）</div>
+      </div>
+      <div class="member">
+        <span class="role">副代表</span>
+        <div class="name">入矢 翔一</div>
+        <div class="bio">認定NPO法人チャンスフォーチルドレン出身</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="tile t1"></div><div class="tile t2"></div>
+  <div class="container">
+    <span class="kicker" style="color:var(--sky-300)">Contact</span>
+    <h2>まずは、お話を聞かせてください。</h2>
+    <p>メールをいただければ、まず保護者の方と30分ほどオンラインでお話しし、活動内容と進め方をご説明します。無理な勧誘はしません。</p>
+    <a class="mail" href="mailto:info@pbside.org">info<span class="at">@</span>pbside.org</a>
+    <a class="btn big" href="mailto:info@pbside.org">メールを送る</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <img src="assets/logo/plus-B-side_lockup_white.svg" alt="+B-side">
+    <div>任意団体として立ち上げ準備中。2026年10月、最初のお子さんをお迎えします。</div>
+  </div>
+</footer>
+
+</body>
+</html>

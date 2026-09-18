@@ -1,0 +1,105 @@
+/* =============================================================
+   +B-side · Color Tokens
+   Palette derived from the brand logo kit:
+     Sky   #33B5E5  (primary)
+     Ink   #2B3A42  (charcoal)
+     Slate #9AA7B0  (muted)
+     Tint  #EAF7FE  · Hairline #E7EFF4
+   Semantic status colors (success/warning/danger) are harmonized
+   EXTENSIONS — the source kit only defined Sky. See readme.md.
+   ============================================================= */
+
+:root {
+  /* ---- Sky (primary brand ramp) ---- */
+  --sky-50:  #EAF7FE;   /* given tint */
+  --sky-100: #D2EEFB;
+  --sky-200: #A8DFF6;
+  --sky-300: #78CDF0;
+  --sky-400: #52C1EB;
+  --sky-500: #33B5E5;   /* PRIMARY — given */
+  --sky-600: #1D9AC9;
+  --sky-700: #197EA4;
+  --sky-800: #1A6383;
+  --sky-900: #194E67;
+
+  /* ---- Ink (cool neutral ramp: charcoal → hairline) ---- */
+  --ink-0:   #FFFFFF;
+  --ink-25:  #F7FAFC;
+  --ink-50:  #F1F5F8;
+  --ink-100: #E7EFF4;   /* given hairline / border */
+  --ink-200: #D5E0E7;
+  --ink-300: #BAC8D1;
+  --ink-400: #9AA7B0;   /* given muted text */
+  --ink-500: #6E7E88;
+  --ink-600: #52626C;
+  --ink-700: #3B4A53;
+  --ink-800: #2B3A42;   /* given charcoal — primary text */
+  --ink-900: #1B262C;
+
+  /* ---- Status (harmonized extensions) ---- */
+  --success-50:  #E3F5EC;
+  --success-500: #23A971;
+  --success-700: #1B8459;
+  --warning-50:  #FCEFD8;
+  --warning-500: #F2A431;
+  --warning-700: #C77F13;
+  --danger-50:   #FCE6E5;
+  --danger-500:  #EE5A52;
+  --danger-700:  #C93F38;
+
+  /* =====================================================
+     SEMANTIC ALIASES — reference these in product work
+     ===================================================== */
+
+  /* Brand */
+  --brand:              var(--sky-500);
+  --brand-hover:        var(--sky-600);
+  --brand-active:       var(--sky-700);
+  --brand-tint:         var(--sky-50);
+  --brand-tint-strong:  var(--sky-100);
+  --on-brand:           #FFFFFF;
+
+  /* Backgrounds & surfaces */
+  --bg-page:      var(--ink-25);
+  --bg-canvas:    #FFFFFF;
+  --surface:      #FFFFFF;
+  --surface-sunken: var(--ink-50);
+  --surface-raised: #FFFFFF;
+  --surface-hover:  var(--ink-25);
+  --overlay:      rgba(27, 38, 44, 0.55);   /* scrim behind dialogs */
+
+  /* Text */
+  --text-primary:   var(--ink-800);
+  --text-secondary: var(--ink-600);
+  --text-muted:     var(--ink-400);
+  --text-disabled:  var(--ink-300);
+  --text-link:      var(--sky-600);
+  --text-on-brand:  #FFFFFF;
+  --text-on-dark:   #FFFFFF;
+  --text-on-dark-muted: rgba(255, 255, 255, 0.68);
+
+  /* Borders */
+  --border-subtle:  var(--ink-100);
+  --border-default: var(--ink-200);
+  --border-strong:  var(--ink-300);
+  --border-brand:   var(--sky-400);
+
+  /* Focus */
+  --focus-ring:      rgba(51, 181, 229, 0.45);
+  --focus-ring-solid: var(--sky-500);
+
+  /* Status semantic */
+  --success:      var(--success-500);
+  --success-bg:   var(--success-50);
+  --warning:      var(--warning-500);
+  --warning-bg:   var(--warning-50);
+  --danger:       var(--danger-500);
+  --danger-bg:    var(--danger-50);
+  --info:         var(--sky-500);
+  --info-bg:      var(--sky-50);
+
+  /* Dark surface (charcoal sections / reversed lockup context) */
+  --dark-surface:      var(--ink-800);
+  --dark-surface-2:    var(--ink-900);
+  --dark-border:       rgba(255, 255, 255, 0.12);
+}
